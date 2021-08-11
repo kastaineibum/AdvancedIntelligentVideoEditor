@@ -1,0 +1,8 @@
+
+ffmpeg -i no5.mp4 -filter_complex "compand,showwavespic=s=640x220" -frames:v 1 output.png
+
+magick demo.jpg -crop "100%x50%+%[fx:0.1*w]+%[fx:0.1*h]" +repage result.jpg
+
+magick demo.jpg -crop "50x100%+%[fx:30]+%[fx:0]" +repage result.jpg
+
+

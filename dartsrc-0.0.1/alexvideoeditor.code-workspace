@@ -1,0 +1,50 @@
+{
+	"folders": [
+		{
+			"path": "alexpark_videoeditor"
+		},
+		{
+			"path": "../../../../var/www/html"
+		},
+		{
+			"path": "alexpark_apikeydecryptor"
+		},
+		{
+			"path": "alexpark_taskserverui"
+		}
+	],
+	"settings": {},
+	"launch": {
+		"configurations": [
+			{
+				"name": "alexpark_videoeditor",
+				"type": "dart",
+				"request": "launch",
+				"flutterMode": "debug",
+				"program": "lib/main.dart"
+			},
+			{
+				"name": "alexpark_taskserverui",
+				"type": "dart",
+				"request": "launch",
+				"flutterMode": "debug",
+				"program": "lib/main.dart",
+			}
+		],
+		"compounds": [
+			{
+				"name": "Launch All",
+				"configurations": [
+					{
+						"folder": "alexpark_videoeditor",
+						"name": "alexpark_videoeditor"
+					},
+					{
+						"folder": "alexpark_taskserverui",
+						"name": "alexpark_taskserverui"
+					}
+				]
+			}
+		]
+	}
+}
